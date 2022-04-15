@@ -132,11 +132,10 @@ $dark: #333;
     margin: 0 0 45px 0;
     font-family: &main-font;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 40px;
     line-height: 60px;
     text-transform: uppercase;
-    color: $accent;
 
     &-secondary {
       margin: 0 0 45px 0;
@@ -197,7 +196,7 @@ $dark: #333;
     transition: all 0.3sec;
 
     &:hover {
-      color: darken($light, 30%);
+      color: $accent;
     }
   }
 }
@@ -238,10 +237,6 @@ $dark: #333;
     span {
       margin-right: 15px;
       margin-left: 15px;
-
-      &:first-child {
-        margin-left: 0;
-      }
     }    
   }
 
@@ -256,8 +251,8 @@ $dark: #333;
   }
 
   &__post-link {
-    padding: 4px 25px;
-   /* border: 1px solid $dark;
+    padding: 5px 25px;
+    border: 1px solid $dark;
     color: $dark;
     transition: all 0.3s;
     font-family: $secondary-font;
@@ -270,7 +265,7 @@ $dark: #333;
     &:hover {
       background-color: $accent;
       border-color: $accent;
-    }*/
+    }
   }
 }
 

@@ -27,12 +27,10 @@
   font-weight: 900;
   font-size: 18px;
   line-height: 18px;
-  border: 1px solid #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333;
   border-radius: 0;
-  display: inline-block;
-  color: #fff;
-  font-style: normal;
-  text-decoration: none;
 }
 
 .section-title {
@@ -132,8 +130,8 @@
   margin: 0 0 45px 0;
   font-family: .banner__info main-font;
   font-style: normal;
-  font-weight: 900;
-  font-size: 55px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -149,9 +147,10 @@
 }
 
 .banner__btn {
+  border-color: #fff;
   color: inherit;
-  -webkit-transition: all .3sec;
-  transition: all .3sec;
+  -webkit-transition: all 0.3sec;
+  transition: all 0.3sec;
 }
 
 .banner__btn:hover {
@@ -165,7 +164,6 @@
 }
 
 .cat__item {
-  min-height: 419px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,12 +171,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 419px;
   background-image: url("../images/cat-men-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -191,4 +190,133 @@
 
 .cat__item--accessories {
   background-image: url("../images/cat-access-bg.jpg");
+}
+
+.cat__link {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: all 0.3sec;
+  transition: all 0.3sec;
+}
+
+.cat__link:hover {
+  color: #d94343;
+}
+
+.blog {
+  padding-bottom: 85px;
+}
+
+.blog__post-img {
+  width: 100%;
+  height: 344px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.blog__post-title {
+  margin: 0 0 15px 0;
+  font-family: "Lato", sans-serif;
+  font-size: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #d94343;
+}
+
+.blog__post-details {
+  margin: 0 0 15px;
+  padding-bottom: 14px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #333;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.blog__post-details span {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.blog__post-excerpt {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #a6a6a6;
+}
+
+.blog__post-link {
+  padding: 5px 25px;
+  border: 1px solid #333;
+  color: #333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.blog__post-link:hover {
+  background-color: #d94343;
+  border-color: #d94343;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 157px;
+  background-image: url("../images/ftr-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  /*margin-top: 86px;*/
+}
+
+.footer p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  /*padding: 65px 0;*/
+}
+
+@media screen and (max-width: 991.98px) {
+  .header__nav-item + .header__nav-item {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .banner__title {
+    letter-spacing: 0.2em;
+  }
 }
